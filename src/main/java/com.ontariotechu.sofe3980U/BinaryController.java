@@ -49,7 +49,7 @@ public class BinaryController {
                         Binary.and(number1, number2).getValue());
                 return "result";
 
-            case "I":   // I represents OR in this lab
+            case "|":   // I represents OR in this lab
                 model.addAttribute("result",
                         Binary.or(number1, number2).getValue());
                 return "result";
