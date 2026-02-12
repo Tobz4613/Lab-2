@@ -76,7 +76,7 @@ public class BinaryControllerTest {
     public void postOrI() throws Exception {
         this.mvc.perform(post("/")
                 .param("operand1", "1010")
-                .param("operator", "I")
+                .param("operator", "|")
                 .param("operand2", "1100"))
             .andExpect(status().isOk())
             .andExpect(view().name("result"))
